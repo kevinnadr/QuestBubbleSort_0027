@@ -14,10 +14,10 @@ void input() {
 			cout << "n is bigger than 20. \n";   
 		}
 	}
-	cout << endl;                           //output baris kosong
-	cout << "===================" << endl;  //output ke layar
-	cout << "enter elemen of array" << endl; //output ke layar
-	cout << "===================" << endl;  //output ke layar
+	cout << endl;                           
+	cout << "===================" << endl;  
+	cout << "enter elemen of array" << endl; 
+	cout << "===================" << endl;  
 
 	for (int i = 0; i < n; i++) {
 		cout << "data -" << (i + 1) << "; ";
@@ -26,7 +26,7 @@ void input() {
 	}
 }
 
-void BubbleShortArray() { // procedur untuk mengurutkan array dengan metode bubble sort
+void BubbleSortArray() { 
 	int pass = 1; // step 1
 
 	do {
@@ -55,30 +55,3 @@ void BubbleShortArray() { // procedur untuk mengurutkan array dengan metode bubb
 	} while (pass <= n - 1);
 }
 
-void display() {
-	cout << endl;
-	cout << "================================" << endl;
-	cout << "Sorted Array" << endl;
-	cout << "================================" << endl;
-	cout << endl;
-
-	for (int i = 0; i < n; i++) {
-		cout << "Data" << i+1 << ": " << arr[i] << endl;
-		if (i < n - 1) {
-			cout << " --> ";
-		}
-	}
-	cout << endl;
-	cout << endl;
-	cout << "Jumlah pass = " << n - 1 << endl;
-	cout << endl;
-}
-
-int main() {
-	input(); // call the input function to get user input
-	BubbleShortArray(); //call the selection sort function
-	display(); //display the sorted array
-	system("pause");
-
-	return 0;
-}
