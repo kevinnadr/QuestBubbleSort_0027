@@ -55,3 +55,22 @@ void BubbleSortArray() {
 	} while (pass <= n - 1);
 }
 
+void display() {
+	cout << endl;
+	cout << "================================" << endl;
+	cout << "Sorted Array" << endl;
+	cout << "================================" << endl;
+	cout << endl;
+
+	for (int i = 0; i < n; i++) {
+		cout << "Data" << i+1 << ": " << arr[i] << endl;
+		if (i < n - 1) {
+			cout << " --> ";
+		}
+	}
+	cout << endl;
+	cout << endl;
+	cout << "Jumlah pass = " << n - 1 << endl;
+	cout << endl;
+}
+
